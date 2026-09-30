@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FF"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- SCREEN TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Your Question"
+            android:textColor="#20243A"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="Add, edit and manage your own quiz questions."
+            android:textColor="#69738A"
+            android:textSize="14sp" />
+
+        <!-- SUBJECT -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Subject"
+            android:textColor="#20243A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spSubject"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#7B849A"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <!-- QUESTION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Question"
+            android:textColor="#20243A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="top|start"
+            android:hint="Enter your question here"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="16dp"
+            android:textColor="#20243A"
+            android:textColorHint="#7B849A"
+            android:textSize="17sp" />
+
+        <!-- OPTIONS TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Answer Options"
+            android:textColor="#20243A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- OPTION A -->
+        <EditText
+            android:id="@+id/etOption1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Option A"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#20243A"
+            android:textColorHint="#7B849A"
+            android:textSize="16sp" />
+
+        <!-- OPTION B -->
+        <EditText
+            android:id="@+id/etOption2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Option B"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#20243A"
+            android:textColorHint="#7B849A"
+            android:textSize="16sp" />
+
+        <!-- OPTION C -->
+        <EditText
+            android:id="@+id/etOption3"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Option C"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#20243A"
+            android:textColorHint="#7B849A"
+            android:textSize="16sp" />
+
+        <!-- OPTION D -->
+        <EditText
+            android:id="@+id/etOption4"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Option D"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#20243A"
+            android:textColorHint="#7B849A"
+            android:textSize="16sp" />
+
+        <!-- CORRECT ANSWER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Correct Answer"
+            android:textColor="#20243A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgCorrectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbAnswerA"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:buttonTint="#635BDA"
+                android:paddingStart="8dp"
+                android:text="A"
+                android:textColor="#20243A"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbAnswerB"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:buttonTint="#635BDA"
+                android:paddingStart="8dp"
+                android:text="B"
+                android:textColor="#20243A"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbAnswerC"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:buttonTint="#635BDA"
+                android:paddingStart="8dp"
+                android:text="C"
+                android:textColor="#20243A"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbAnswerD"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:buttonTint="#635BDA"
+                android:paddingStart="8dp"
+                android:text="D"
+                android:textColor="#20243A"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <!-- EXPLANATION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explanation (Optional)"
+            android:textColor="#20243A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="top|start"
+            android:hint="Explain why the answer is correct"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="16dp"
+            android:textColor="#20243A"
+            android:textColorHint="#7B849A"
+            android:textSize="16sp" />
+
+        <!-- SAVE -->
+        <Button
+            android:id="@+id/btnSaveQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#635BDA"
+            android:text="Save Question"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- CANCEL -->
+        <Button
+            android:id="@+id/btnCancelQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#E1E6F2"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#20243A"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
